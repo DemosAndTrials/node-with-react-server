@@ -4,7 +4,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = {
-    port: 5000,
+    port: process.env.PORT,
     googleClientID: process.env.GOOGLE_CLIENT_ID,
     googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
     mongoUri: process.env.MONGO_URI,
